@@ -1,0 +1,23 @@
+[project]
+name = "resarch-buddy"
+version = "0.1.0"
+description = "AI-powered research assistant using OpenAI Agents SDK"
+readme = "README.md"
+authors = [
+    { name = "waleed260", email = "vkdeku20@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckduckgo-search>=8.1.1",
+    "openai-agents>=0.13.2",
+    "click>=8.3.1",
+    "httpx>=0.28.1",
+    "pydantic>=2.12.5",
+]
+
+[project.scripts]
+resarch-buddy = "resarch_buddy.cli:cli"
+
+[build-system]
+requires = ["uv_build>=0.9.25,<0.10.0"]
+build-backend = "uv_build"
