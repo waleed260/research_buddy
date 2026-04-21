@@ -574,5 +574,35 @@ Quantum computing has made significant strides in 2025-2026...
 ```
 
 ---
+## 🤝 Contributing
 
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+MIT License - See LICENSE file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Built with [OpenAI Agents SDK](https://github.com/openai/openai-agents-python)
+- Search powered by [DuckDuckGo](https://duckduckgo.com)
+- CLI built with [Click](https://click.palletsprojects.com)
+
+---
+
+<div align="center">
+
+**Research Buddy** — Your AI research companion 🤖📚
+
+Made with ❤️ using OpenAI Agents SDK
+
+</div>
 
