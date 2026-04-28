@@ -50,28 +50,4 @@ async def main():
     for item in history:
         print(f"  • {item['topic']} (Quality: {item['quality_score']:.2f})")
     
-    # Example 4: Provide feedback (for learning)
-    print("\n" + "=" * 60)
-    print("Example 4: Providing Feedback")
-    print("=" * 60)
-    
-    agent.record_feedback(
-        topic="Benefits and risks of artificial intelligence",
-        feedback_type="quality",
-        feedback_text="Great comprehensive coverage of the topic",
-        quality_rating=0.9
-    )
-    print("✅ Feedback recorded!")
-    
-    # Example 5: Get learning insights
-    print("\n" + "=" * 60)
-    print("Example 5: Learning Insights")
-    print("=" * 60)
-    
-    insights = agent.get_learning_insights()
-    print(f"Total feedback: {insights.get('total_feedback', 0)}")
-    print(f"Average quality: {insights.get('avg_quality', 0):.2f}")
 
-
-if __name__ == "__main__":
-    asyncio.run(main())
