@@ -186,31 +186,3 @@ def search_memory(query: str, limit: int):
             click.echo(f"   Tags: {', '.join(mem.tags)}")
 
 
-@cli.command()
-def clear():
-    """Clear all research history and memories."""
-    if click.confirm("Are you sure you want to clear all research history?"):
-        store = ResearchMemoryStore()
-        # Clear by reinitializing the storage file
-        import json
-        with open(store.storage_path, "w") as f:
-            json.dump([], f)
-        click.echo("✅ Research history cleared.")
-    else:
-        click.echo("Operation cancelled.")
-
-
-@cli.command()
-def version():
-    """Show version information."""
-    click.echo("Research Buddy v0.1.0")
-    click.echo("Powered by OpenAI Agents SDK")
-
-
-def main():
-    """Main entry point."""
-    cli()
-
-
-if __name__ == "__main__":
-    main()
